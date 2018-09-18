@@ -1,6 +1,7 @@
 # PivotalVersionsReport
 
-./currentProductsInstalled.sh <PivnetAPIToken> https://<opsmanaddress> <opsmanuser> <opsmanpassword>
+./currentProductsInstalled.sh (PivnetAPIToken) https://(opsmanaddress) (opsmanuser) (opsmanpassword)
+<p>
 Report gets written to updatesAvailable.txt in the current directory.
 
 Thing you need to tweak:
