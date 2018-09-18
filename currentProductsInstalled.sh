@@ -1,6 +1,6 @@
 #!/bin/bash
 ./pivnet login --api-token=$1
-./om -k -u $3  -p $4 -t $2 available-products  | cut -d "|" -f 2,3 |while read line
+./om -k -u $3  -p $4 -t $2 deployed-products  | cut -d "|" -f 2,3 |while read line
         do
             if ! [[ $line == *[+]* ]] && ! [[ $line == *"NAME"* ]] 
             then 
@@ -11,3 +11,4 @@
             fi 
 
        done
+cat updatesAvailable.txt | column -t > formattedNicely.txt
